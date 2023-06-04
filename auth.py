@@ -21,12 +21,6 @@ def signUp():
             
 # signUp()
 
-def mobileNumber(username):
-    number = '123'
-    if sendOTP(number):
-        dmob[username] = number
-        return True
-
 def main():
     print('Welcome to Skillslash Web Portal')
     while True: 
