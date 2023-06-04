@@ -21,6 +21,12 @@ def signUp():
             
 # signUp()
 
+def sendOTP(number):
+    otp = generateOTP()
+    receivedOTP = input('Enter received OTP: ')
+    if otp == receivedOTP:
+        return True
+
 def main():
     print('Welcome to Skillslash Web Portal')
     while True: 
