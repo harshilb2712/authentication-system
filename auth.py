@@ -25,6 +25,11 @@ def mobileNumber(username):
     number = '123'
     if sendOTP(number):
         dmob[username] = number
+
+def sendOTP(number):
+    otp = generateOTP()
+    receivedOTP = input('Enter received OTP: ')
+    if otp == receivedOTP:
         return True
 
 def main():
@@ -47,5 +52,9 @@ def main():
 
         else:
             print('Invalid input')
+
             
+d = {'admin':'Qwerty@123'}
+dmob = {'admin':'9354328855'}
+
 main()
