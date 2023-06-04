@@ -21,6 +21,11 @@ def signUp():
             
 # signUp()
 
+def mobileNumber(username):
+    number = '123'
+    if sendOTP(number):
+        dmob[username] = number
+
 def sendOTP(number):
     otp = generateOTP()
     receivedOTP = input('Enter received OTP: ')
