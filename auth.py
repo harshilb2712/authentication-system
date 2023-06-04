@@ -1,3 +1,26 @@
+def signUp():
+    print('Welcome to Skillslash SignUp Portal')
+    while True:
+        userUp = input('Enter a new username: ').lower()
+        if userUp == '0':
+            return 'Failed'
+        
+        elif userUp not in d:
+            passUp = input('Enter a strong Password: ')
+            checkPasswordStrength(passUp)
+            confirmPassword(passUp)
+            mobileNumber(userUp)
+            d[userUp] = passUp    # d.update({userUp:passUp})
+            return 'Successful'
+        
+        else:
+            print('''Username already exists.
+            Press 0 to Exit or
+            Try again
+            ''')
+            
+# signUp()
+
 def main():
     print('Welcome to Skillslash Web Portal')
     while True: 
