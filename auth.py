@@ -21,6 +21,12 @@ def signUp():
             
 # signUp()
 
+def mobileNumber(username):
+    number = '123'
+    if sendOTP(number):
+        dmob[username] = number
+        return True
+
 def main():
     print('Welcome to Skillslash Web Portal')
     while True: 
@@ -41,5 +47,9 @@ def main():
 
         else:
             print('Invalid input')
+
             
+d = {'admin':'Qwerty@123'}
+dmob = {'admin':'9354328855'}
+
 main()
